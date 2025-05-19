@@ -1,10 +1,12 @@
 import { View } from 'react-native';
-import { install } from "react-native-quick-crypto";
+import 'react-native-get-random-values';
+// import { install } from "react-native-quick-crypto";
 import PolyfillCrypto from 'react-native-webview-crypto';
 import Index from './index';
-install()
+// install()
+
 export default function RootLayout() {
-  return <View>
+  return <View style={{ flex: 1 }}>
     <PolyfillCrypto />
     <Index />
   </View>;
