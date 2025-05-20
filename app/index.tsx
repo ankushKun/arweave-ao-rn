@@ -1,3 +1,6 @@
+// This setup works fine on Android but fails on iOS
+// Need it working on both platforms
+
 // import { ArweaveSigner } from "@dha-team/arbundles"; // This used core node packages like stream, buffer, crypto, etc.
 import { ArweaveSigner } from "@dha-team/arbundles/build/web/bundle"; // This uses web-compatible packages like window.crypto, etc.
 
